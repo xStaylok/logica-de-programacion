@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<h1>Calcular índice de masa corporal</h1>
+
+<script>
+	
+	function saltarLinea(){
+
+		document.write("<br><br><br>");
+	}
+
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+
+	function calcularImc(peso,altura){
+
+		imc = peso / (altura * altura);
+
+        return (peso / (altura * altura));
+		
+	}
+
+
+    imprimir("El promedio de IMC calculado de Christian y Giulianna es: " + (calcularImc(77,1.78)+calcularImc(72,1.70))/2);
+
+    imprimir("El promedio de IMC calculado de Jorgito y Cherry es: " + (calcularImc(4,0.40)+calcularImc(7,0.70))/2);
+
+    imprimir("El promedio de IMC calculado de Triple H y Shawn Michaels es: " + (calcularImc(96,1.94)+calcularImc(93,1.92))/2);
+
+
+</script>

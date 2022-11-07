@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION</h1>
+
+<script>
+	
+	function saltarLinea(){
+
+		document.write("<br><br><br>");
+	}
+
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+    //se calcula un numero random que multiplique por 10 para que este entre 0 y 10 y se redonda para que devuelva un numero entero
+
+	numeroPensado = Math.round(Math.random()*10);
+	numeroLanzado = parseInt(prompt("Ingrese un numero del 1 al 10"));
+
+	if (numeroLanzado == numeroPensado) {
+
+		imprimir("Usted ha acertado")
+
+	}
+
+	else {
+
+	    imprimir("Usted erró, el número pensado era : " + numeroPensado)
+	
+	}
+
+</script>
